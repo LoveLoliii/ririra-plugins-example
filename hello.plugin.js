@@ -1,17 +1,10 @@
-class HelloPlugin {
-  constructor() {
-    this.name = 'hello';
-    this.version = '1.0.0';
-  }
+// hello.plugin.js
+module.exports.init = (eventBus) => {
+  console.log("[hello.plugin] initialized!");
 
-  async onMessage(event, ctx) {
-    const msg = event.d.content;
-    const channelId = event.d.channel_id;
-
-    if (msg === '你好') {
-      await ctx.sendMessage(channelId, '你好呀，我是动态加载的插件 🤖');
+  eventBus.on('message', (msg) => {
+    if (msg.text === 'hello') {
+      console.log("[hello.plugin] Bot replies: Hi!");
     }
-  }
-}
-
-module.exports = HelloPlugin;
+  });
+};
