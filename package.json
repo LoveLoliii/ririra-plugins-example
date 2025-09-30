@@ -10,5 +10,11 @@
   "author": "",
   "license": "ISC",
   "description": "",
-   "source": { "type": "git", "url": "https://github.com/LoveLoliii/ririra-plugins-example.git" }
+  "source": {
+    "type": "git",
+    "url": "https://github.com/LoveLoliii/ririra-plugins-example.git"
+  },
+  "dependencies": {
+    "axios": "^1.12.2"
+  }
 }
