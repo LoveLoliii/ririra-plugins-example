@@ -1,0 +1,14 @@
+{
+  "name": "ririra-plugins-example",
+  "version": "1.0.0",
+  "main": "hello.plugin.js",
+  "enable": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+   "source": { "type": "git", "url": "https://github.com/LoveLoliii/ririra-plugins-example.git" }
+}
